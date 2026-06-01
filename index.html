@@ -7,13 +7,16 @@
 <style>
 body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#243044;line-height:1.6}
 .container{max-width:1100px;margin:auto;padding:0 24px}
-.hero{background:linear-gradient(135deg,#0b1f33,#123a5a);color:white;padding:70px 0;border-bottom:6px solid #c99a36}
-.hero h1{font-size:48px;margin:0}
+nav{background:#071827;color:white;padding:14px 0;position:sticky;top:0;z-index:10}
+nav a{color:white;text-decoration:none;margin-right:22px;font-weight:600}
+.hero{background:linear-gradient(135deg,#0b1f33,#123a5a);color:white;padding:72px 0;border-bottom:6px solid #c99a36}
+.hero h1{font-size:52px;margin:0}
 .hero h2{font-weight:400;margin:10px 0;color:#e5edf5}
-.hero p{max-width:850px;font-size:18px}
-.links a{display:inline-block;margin:8px 10px 0 0;padding:10px 15px;border-radius:24px;border:1px solid #d8e3ef;color:white;text-decoration:none}
-.section{padding:34px 0}
-.card{background:white;border-radius:16px;padding:28px;margin-bottom:22px;box-shadow:0 10px 25px rgba(0,0,0,.06)}
+.hero p{max-width:880px;font-size:18px}
+.links a{display:inline-block;margin:8px 10px 0 0;padding:11px 16px;border-radius:24px;border:1px solid #d8e3ef;color:white;text-decoration:none}
+.primary{background:#c99a36!important;color:#071827!important;border-color:#c99a36!important;font-weight:700}
+.section{padding:36px 0}
+.card{background:white;border-radius:16px;padding:30px;margin-bottom:22px;box-shadow:0 10px 25px rgba(0,0,0,.06)}
 h3{color:#123a5a;margin-top:0;font-size:25px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .metric{background:#f8fafc;border-left:5px solid #c99a36;border-radius:12px;padding:18px}
@@ -27,24 +30,38 @@ footer{background:#0b1f33;color:#cbd7e3;text-align:center;padding:24px}
 </head>
 <body>
 
+<nav>
+<div class="container">
+<a href="#about">About</a>
+<a href="#highlights">Highlights</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
 <div class="hero">
-  <div class="container">
-    <h1>Vignesh Kumar</h1>
-    <h2>Principal QA Architect</h2>
-    <p>Quality Engineering Transformation | Automation Strategy | Engineering Governance</p>
-    <p>Quality Engineering leader with 20+ years of experience helping organisations improve software quality, delivery confidence and engineering effectiveness across Life Sciences, Financial Services, Insurance, Retail and SaaS platforms.</p>
-    <div class="links">
-      <a href="mailto:vibisis@gmail.com">Email</a>
-      <a href="tel:+447448732167">Call</a>
-      <a href="https://www.linkedin.com/in/vigneshkumarn/" target="_blank">LinkedIn</a>
-    </div>
-  </div>
+<div class="container">
+<h1>Vignesh Kumar</h1>
+<h2>Principal QA Architect</h2>
+<p>Quality Engineering Transformation | Automation Strategy | Engineering Governance</p>
+<p>Helping organisations build stronger quality engineering capability, improve release confidence and embed automation, governance and continuous quality into modern software delivery.</p>
+<div class="links">
+<a class="primary" href="mailto:vibisis@gmail.com">Contact Me</a>
+<a href="https://www.linkedin.com/in/vigneshkumarn/" target="_blank">LinkedIn Profile</a>
+</div>
+</div>
 </div>
 
 <div class="section">
 <div class="container">
 
-<div class="card">
+<div id="about" class="card">
+<h3>About</h3>
+<p>I am a Quality Engineering leader with more than 20 years of experience across Life Sciences, Financial Services, Healthcare, Insurance, Retail and SaaS platforms. My career has progressed from hands-on automation engineering to enterprise test architecture, quality transformation and engineering governance.</p>
+<p>I specialise in building automation capability, defining quality strategies, improving delivery assurance and helping engineering teams adopt practical quality controls that support faster and more reliable software delivery.</p>
+</div>
+
+<div id="highlights" class="card">
 <h3>Career Highlights</h3>
 <div class="grid">
 <div class="metric"><strong>20+</strong>Years Experience</div>
@@ -59,14 +76,15 @@ footer{background:#0b1f33;color:#cbd7e3;text-align:center;padding:24px}
 <div class="card">
 <h3>Core Expertise</h3>
 <div class="skills">
-<span>Quality Engineering</span><span>Automation Architecture</span><span>Engineering Governance</span>
-<span>CI/CD Quality Controls</span><span>Risk Based Testing</span><span>Integration Assurance</span>
-<span>Delivery Assurance</span><span>Cypress</span><span>Selenium</span><span>Robot Framework</span>
-<span>GitHub Actions</span><span>AWS</span><span>JIRA</span><span>Zephyr</span><span>ALM</span>
+<span>Quality Engineering Strategy</span><span>Test Architecture</span><span>Automation Architecture</span>
+<span>Engineering Governance</span><span>CI/CD Quality Controls</span><span>Risk Based Testing</span>
+<span>Integration Assurance</span><span>Delivery Assurance</span><span>Release Readiness</span>
+<span>Cypress</span><span>Selenium</span><span>Robot Framework</span><span>GitHub Actions</span>
+<span>AWS</span><span>REST APIs</span><span>JIRA</span><span>Zephyr</span><span>ALM</span>
 </div>
 </div>
 
-<div class="card">
+<div id="experience" class="card">
 <h3>Experience</h3>
 
 <div class="role">
@@ -86,7 +104,13 @@ footer{background:#0b1f33;color:#cbd7e3;text-align:center;padding:24px}
 <div class="meta">Automation Architect, Technical Lead and Automation Consultant | 2005 to 2016</div>
 <p>Designed enterprise automation frameworks across insurance, healthcare, retail and media sectors. Founding member of Cognizant’s Automation Centre of Excellence.</p>
 </div>
+</div>
 
+<div id="contact" class="card">
+<h3>Contact</h3>
+<p>Email: <a href="mailto:vibisis@gmail.com">vibisis@gmail.com</a></p>
+<p>Phone: +44 74487 32167</p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/vigneshkumarn/" target="_blank">linkedin.com/in/vigneshkumarn</a></p>
 </div>
 
 </div>
